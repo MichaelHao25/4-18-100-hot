@@ -52,7 +52,7 @@
 	</header>
 	<mian class="mian">
 		<section class="list">
-			<hgroup class="item">
+			<hgroup class="item active">
 				<div class="title">
 					<h3>训练 98 分钟<span>斑马篮球俱乐部</span><span>09.23 18:27</span></h3>
 					<div class="more-info">
@@ -118,6 +118,13 @@
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script>
 		$('.mian .menu-toggle').on('click', function() {
+			if($(this).parent('.item').hasClass('active')){
+				var that = this
+				$(this).siblings('.content').slideToggle(300,function(){
+					$(that).parent('.item').removeClass('active')
+				})	
+				return ;
+			}
 			$(this).siblings('.content').slideToggle();
 			$(this).toggleClass('active');
 		});
