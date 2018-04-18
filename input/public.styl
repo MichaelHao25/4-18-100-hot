@@ -79,12 +79,16 @@ background:rgba(255,255,255,.8);
 			width 100%
 	.toogle
 		position absolute
-		bottom 65px
+		top 18px
 		right 15px
 		width 16px
 		height 16px
 		background url('../img/icon-closedown@2x.png') center center/100% 100% no-repeat
 		transition 0.3s
 		&.active
-			bottom 18px
 			background-image url('../img/icon-closeup@2x.png')
+	.content
+		position relative
+		.toogle
+			top auto
+			bottom 18px

@@ -66,9 +66,10 @@
 						<div class="item">命中率66%</div>
 					</div>
 				</div>
-				<div class="toogle"></div>
+				<div class="toogle menu-toggle"></div>
 				<div class="content">
 					<img src="img/icon.png" alt="">
+				<div class="toogle active ed"></div>
 				</div>
 			</hgroup>
 			<hgroup class="item">
@@ -85,9 +86,10 @@
 						<div class="item">命中率66%</div>
 					</div>
 				</div>
-				<div class="toogle"></div>
+				<div class="toogle menu-toggle"></div>
 				<div class="content">
 					<img src="img/icon.png" alt="">
+				<div class="toogle active ed"></div>
 				</div>
 			</hgroup>
 			<hgroup class="item">
@@ -104,9 +106,10 @@
 						<div class="item">命中率66%</div>
 					</div>
 				</div>
-				<div class="toogle"></div>
+				<div class="toogle menu-toggle"></div>
 				<div class="content">
 					<img src="img/icon.png" alt="">
+					<div class="toogle active ed"></div>
 				</div>
 			</hgroup>
 		</section>
@@ -114,9 +117,12 @@
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script>
-		$('.mian .toogle').on('click', function() {
+		$('.mian .menu-toggle').on('click', function() {
 			$(this).siblings('.content').slideToggle();
 			$(this).toggleClass('active');
+		});
+		$('.mian .content .toogle').on('click', function() {
+			$('.mian .menu-toggle').trigger('click');
 		});
 	</script>
 </body>
