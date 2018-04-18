@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head design-width="750">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<!-- <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/> -->
+	<!-- 添加 favicon icon -->
+	<meta name="renderer" content="webkit">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/public.css" />
+	<script src="js/font-size.js"></script>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="total">
+			<h2>训练总时长</h2>
+			<div class="minus">326<span class="nuit">分钟</span></div>
+		</div>
+		<div class="wrap">
+			<div class="item">
+				<h3>跑动速度m/s</h3>
+				<div class="value">1.2</div>
+			</div>
+			<div class="item">
+				<h3>跑动距离m</h3>
+				<div class="value">9102</div>
+			</div>
+			<div class="item">
+				<h3>卡路里kcal</h3>
+				<div class="value">79.9</div>
+			</div>
+		</div>
+		<div class="wrap">
+			
+			<div class="item">
+				<h3>跑动速度m/s</h3>
+				<div class="value">177</div>
+			</div>
+			<div class="item">
+				<h3>跑动距离m</h3>
+				<div class="value">92</div>
+			</div>
+			<div class="item">
+				<h3>卡路里kcal</h3>
+				<div class="value">51.9</div>
+			</div>
+		</div>
+	</header>
+	<mian class="mian">
+		<section class="list">
+			<hgroup class="item">
+				<div class="title">
+					<h3>训练 98 分钟<span>斑马篮球俱乐部</span><span>09.23 18:27</span></h3>
+					<div class="more-info">
+						<div class="item">速度 2m/s</div>
+						<div class="item">距离 320m</div>
+						<div class="item">卡路里 79.9kcal</div>
+					</div>
+					<div class="more-info">
+						<div class="item">投篮 12</div>
+						<div class="item">进球 8</div>
+						<div class="item">命中率66%</div>
+					</div>
+				</div>
+				<div class="toogle"></div>
+				<div class="content">
+					<img src="img/icon.png" alt="">
+				</div>
+			</hgroup>
+			<hgroup class="item">
+				<div class="title">
+					<h3>训练 98 分钟<span>斑马篮球俱乐部</span><span>09.23 18:27</span></h3>
+					<div class="more-info">
+						<div class="item">速度 2m/s</div>
+						<div class="item">距离 320m</div>
+						<div class="item">卡路里 79.9kcal</div>
+					</div>
+					<div class="more-info">
+						<div class="item">投篮 12</div>
+						<div class="item">进球 8</div>
+						<div class="item">命中率66%</div>
+					</div>
+				</div>
+				<div class="toogle"></div>
+				<div class="content">
+					<img src="img/icon.png" alt="">
+				</div>
+			</hgroup>
+			<hgroup class="item">
+				<div class="title">
+					<h3>训练 98 分钟<span>斑马篮球俱乐部</span><span>09.23 18:27</span></h3>
+					<div class="more-info">
+						<div class="item">速度 2m/s</div>
+						<div class="item">距离 320m</div>
+						<div class="item">卡路里 79.9kcal</div>
+					</div>
+					<div class="more-info">
+						<div class="item">投篮 12</div>
+						<div class="item">进球 8</div>
+						<div class="item">命中率66%</div>
+					</div>
+				</div>
+				<div class="toogle"></div>
+				<div class="content">
+					<img src="img/icon.png" alt="">
+				</div>
+			</hgroup>
+		</section>
+	</mian>
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script>
+		$('.mian .toogle').on('click', function() {
+			$(this).siblings('.content').slideToggle();
+			$(this).toggleClass('active');
+		});
+	</script>
+</body>
+</html>
+
