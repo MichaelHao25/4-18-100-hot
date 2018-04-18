@@ -117,7 +117,7 @@
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script>
-		$('.mian .menu-toggle').on('click', function() {
+		$('.mian .title').on('click', function() {
 			if($(this).parent('.item').hasClass('active')){
 				var that = this
 				$(this).siblings('.content').slideToggle(300,function(){
@@ -126,7 +126,7 @@
 				return ;
 			}
 			$(this).siblings('.content').slideToggle();
-			$(this).toggleClass('active');
+			$(this).siblings('.menu-toggle').toggleClass('active');
 		});
 		$('.mian .content .toogle').on('click', function() {
 			$('.mian .menu-toggle').trigger('click');
